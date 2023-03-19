@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>How to make a clock</title>
+
+ <!-- css -->
+ <link rel="stylesheet" href="css/styles.css">
+
+ <!-- Javascript -->
+ <script src="index.js"></script>
+
+ <!-- Google font -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+ <!-- fontawsome -->
+ <script src="https://kit.fontawesome.com/828b7eb11f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <!-- header -->
+ <header>
+  <!--title-->
+ <div id="title">
+  <h1>How to make a clock</h1>
+ </div>
+  
+    <ul>
+      <li><a href="index.html">Menu</a></li>
+      <li><a href="#aboutme">About Me</a></li>
+      <li class="dropmenu"><a href="#sample">Tutorial</a>
+        <!-- <ul class="submenu">
+          <li><a href="#step1">STEP1</a></li>
+          <li><a href="#step2">STEP2</a></li>
+          <li><a href="#step3">STEP3</a></li>
+          <li><a href="#step4">STEP4</a></li>
+          <li><a href="#step5">STEP5</a></li>
+          <li><a href="#step6">STEP6</a></li>
+          <li><a href="#step7">STEP7</a></li>
+        </ul> -->
+      </li>
+      <li><a href="#footer">Contact</a></li>
+    </ul>
+
+
+ </header>
+
+ <!--aboutme-->
+ <section id="aboutme">
+  <h1>About me</h1>
+  <div class="aboutme">
+   <div>
+    <h2>Seika</h2>
+    <h3>Hello there! Thank you for visitting my web site.<br>
+     I've been learning to code and focusing on front-end development. <br>
+     Let's have a fun with creating a clock together!<h3>
+   </div>
+   <img src="images/profile.png" alt="profile" width=20%>
+  </div>
+ </section>
+ <hr>
+
+ <!--sample-->
+ <section id="sample">
+  <h1>Let's make a clock with me!</h1>
+  <div class="sample">
+   <article>
+    <canvas id="clockid"></canvas>
+    <p>this is our final goal!</p><br>
+   </article>
+   <aside>
+    <p class="codepen" data-height="400" data-theme-id="light" data-default-tab="html" data-slug-hash="LYJewxa" data-user="muffin0702" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/muffin0702/pen/LYJewxa">
+      Clock</a> by Seika Jojima (<a href="https://codepen.io/muffin0702">@muffin0702</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+   <p>Sample code</p>
+   </aside>
+  </div>
+ </section>
+
+ <hr>
+
+
+ <!--STEP1-->
+ <section id="step1">
+  <h1>Step1</h1>
+  <div class="tutorial">
+    <div class="explanation">
+      <p>let's do some setup! First of all, we need to write script tag inside head section in order to link HTML & Javascript.</p>
+      <p> Then, write canvas tag inside your body section. And inside of your canvas tag, you must set up id. In this time I named "clockid".
+      <p>This can connect HTML & Javascript.</p>
+      <p> And I put font link from Google font as well.</p>
+      <p> You can choose whatever your favorite.</p>
+    </div>
+    <p class="codepen" data-height="500" data-theme-id="light" data-default-tab="html" data-slug-hash="RwYxXJW" data-user="muffin0702" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/muffin0702/pen/RwYxXJW">
+      Step1</a> by Seika Jojima (<a href="https://codepen.io/muffin0702">@muffin0702</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+  </div>
+ </section>
+ <hr>
+
+
+ <!--STEP2-->
+ <section id="step2">
+  <h1>Step2</h1>
+  <div class="tutorial">
+    <div class="explanation">
+      <p>As a next step, we are going to set up some functions inside Javascript. <br>
+        ① <span>window.onload = function()</span> is a program that executes processing after all reading is completed. <br>
+        ② <span>setInterval() method</span> offered on the Window and Worker interfaces, repeatedly calls a function or executes a code snippet, with a fixed time delay between each call. <br>
+        ③ Date objects represent a single moment in time in a platform-independent format.
+      </p>
+    </div>
+    <p class="codepen" data-height="500" data-theme-id="light" data-default-tab="js" data-slug-hash="oNPEwwp" data-user="muffin0702" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/muffin0702/pen/oNPEwwp">
+      Step2</a> by Seika Jojima (<a href="https://codepen.io/muffin0702">@muffin0702</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+  </div>
+ </section>
+ <hr>
+
+
+ <!--STEP3-->
+ <section id="step3">
+  <h1>Step3</h1>
+  <div class="tutorial">
+    <div class="explanation">
+      <p>
+        Next, let's set the size.<br>
+        Set the desired height and width. We also create a function that gives the center coordinates. <br>
+        And don't forget to set up the size of the radius of the dial!
+        
+      </p>
+    </div>
+    <p class="codepen" data-height="500" data-theme-id="light" data-default-tab="js" data-slug-hash="OJoQYgj" data-user="muffin0702" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/muffin0702/pen/OJoQYgj">
+      Step3</a> by Seika Jojima (<a href="https://codepen.io/muffin0702">@muffin0702</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+  </div>
+ </section>
+ <hr>
+
+
+ <!--STEP4-->
+ <section id="step4">
+  <h1>Step4</h1>
+  <div class="tutorial">
+   <div class="explanation">
+    <p>
+      Next, I'm going to explain how to draw a object. <br>
+      In this case, I drew two triangles as roof, and one rectangle as a body.  <br>
+      at the beginning, fill with your favorite color and start with <span>ctx.beginPaths.</span><br>
+      Then, you can move the position while using <span>ctx.moveTo(xposition,yposition)</span> and <span>ctx.lineTo(xposition,yposition)</span><br>
+      Don't forget to close your path with <span>ctx.closePath()</span>.
+    </p>
+   </div>
+   <p class="codepen" data-height="500" data-theme-id="light" data-default-tab="result" data-slug-hash="wvEybPp" data-user="muffin0702" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+    <span>See the Pen <a href="https://codepen.io/muffin0702/pen/wvEybPp">
+    Step4</a> by Seika Jojima (<a href="https://codepen.io/muffin0702">@muffin0702</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+  </p>
+  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+  </div>
+ </section>
+ <hr>
+
+ <!--STEP5-->
+ <section id="step5">
+  <h1>Step5</h1>
+  <div class="tutorial">
+    <div class="explanation">
+      <p>
+        Let's move on setting for a dial. <br>
+        In this case, I relied on <span>for loop</span> to show specific numbers. <br>
+        ( 12, 3 , 6 and 9 ) <br>
+        Also we need to define the position for numbers while using <span>Math object</span>.
+      </p>
+    </div>
+    <p class="codepen" data-height="500" data-theme-id="light" data-default-tab="result" data-slug-hash="MWqQMWN" data-user="muffin0702" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/muffin0702/pen/MWqQMWN">
+      Step6</a> by Seika Jojima (<a href="https://codepen.io/muffin0702">@muffin0702</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+  </div>
+ </section>
+ <hr>
+
+ <!--STEP6-->
+ <section id="step6">
+  <h1>Step6</h1>
+  <div class="tutorial">
+    <div class="explanation">
+      <p>
+        In this step, we are going to move a center while using <span>ctx.translate(xposition, yposition)</span>. <br>
+        And set up for number which shows hour. <br>
+        I relied on <span>for loop</span> to remove some unnecessary dials in the design. And rotate them in a circle.
+      </p>
+    </div>
+    <p class="codepen" data-height="500" data-theme-id="light" data-default-tab="js" data-slug-hash="MWqQMWN" data-user="muffin0702" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/muffin0702/pen/MWqQMWN">
+      Step6</a> by Seika Jojima (<a href="https://codepen.io/muffin0702">@muffin0702</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+  </div>
+ </section>
+ <hr>
+
+ <!--STEP7-->
+ <section id="step7">
+  <h1>Step7</h1>
+  <div class="tutorial">
+    <div class="explanation">
+      <p>
+        Lastly, we are going to drow  each had and the circle in the center. <br>
+        This is similar thing with STEP4. But we need to rotate them in order to pur in a circle.
+      </p>
+    </div>
+    <p class="codepen" data-height="500" data-theme-id="light" data-default-tab="result" data-slug-hash="NWLyZxe" data-user="muffin0702" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/muffin0702/pen/NWLyZxe">
+      Step7</a> by Seika Jojima (<a href="https://codepen.io/muffin0702">@muffin0702</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+  </div>
+ </section>
+ <hr>
+
+
+ <section id="complete">
+  <h1>You've compltetd!</h1>
+  <div class="tutorial">
+    <div class="explanation">
+      <p>Well done! Hope you enjoyed ! <br>
+        Now you can play around with your own clock! <br>
+        Have a fun!
+      </p>
+    </div>
+    <p class="codepen" data-height="500" data-theme-id="light" data-default-tab="result" data-slug-hash="NWLyZxe" data-user="muffin0702" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/muffin0702/pen/NWLyZxe">
+      Step7</a> by Seika Jojima (<a href="https://codepen.io/muffin0702">@muffin0702</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+  </div>
+ </section>
+
+ <footer id="footer">
+  <h2>Contact me</h2>
+  <ul>
+    <li><i class="fa-regular fa-envelope"></i><a href="mailto:seika.jojima@itdcanada.ca">Email</a></li>
+    <li><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com">Linkedin</a></li>
+    <li><i class="fa-brands fa-square-facebook"></i><a href="https://www.facebook.com/">Facebook</a></li>
+  </ul>
+ </footer>
+</body>
+</html>
